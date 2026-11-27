@@ -1,0 +1,58 @@
+#NO TOCAR
+# =========================
+#Variables de Entorno
+# =========================
+.env
+.env.local
+.env.*
+# Plantilla sin secretos que sí se versiona
+!.env.example
+
+# =========================
+#Entornos Virtuales
+# =========================
+venv/
+env/
+.venv/
+
+# =========================
+#Python / Django
+# =========================
+__pycache__/
+*.py[cod]
+*$py.class
+db.sqlite3
+media/
+staticfiles/
+
+# =========================
+#Node / Frontend (React)
+# =========================
+node_modules/
+dist/   
+build/
+.npm/
+
+# =========================
+#Archivos del Sistema Operativo
+# =========================
+.DS_Store
+Thumbs.db
+
+# =========================
+#Editores y configuraciones locales
+# =========================
+.vscode/
+.idea/
+*.swp
+.env
+
+# =========================
+#Contenido relacionado a las pruebas
+# =========================
+.coverage
+htmlcov/
+
+# Resultados y datos locales reproducibles de QA; la evidencia seleccionada va en docs.
+/.tmp/scrum149/
+/.tmp/scrum148/

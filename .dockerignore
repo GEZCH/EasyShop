@@ -1,0 +1,40 @@
+# Fuera de las imágenes: secretos, archivos locales y lo que se genera al compilar o probar.
+# Los Dockerfile copian solo lo que necesitan; esto además achica el contexto que se envía a Docker.
+
+# Secretos y configuración local (las variables de cada tienda van en su archivo, fuera del repositorio)
+**/.env
+**/.env.*
+!**/.env.example
+deploy/*.env
+.mcp.json
+GUIA_PRUEBAS_MERCADO_PAGO.md
+
+# Entornos y dependencias instaladas
+venv/
+.venv/
+env/
+**/node_modules/
+**/__pycache__/
+**/*.py[cod]
+
+# Datos locales: fotos subidas, estáticos y resultados de pruebas
+media/
+staticfiles/
+negocio/
+frontend/dist/
+frontend/test-results/
+frontend/playwright-report/
+.tmp/
+.playwright-mcp/
+htmlcov/
+.coverage
+
+# Repositorio, editores y herramientas de agentes
+.git/
+.github/
+.vscode/
+.idea/
+.claude/
+.agents/
+AGENTS.md
+MEMORY.md

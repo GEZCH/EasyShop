@@ -1,0 +1,2 @@
+# Los scripts de shell corren en Linux (contenedores): siempre con LF, también en una copia de Windows
+*.sh text eol=lf
